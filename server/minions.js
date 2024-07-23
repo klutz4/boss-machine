@@ -50,7 +50,7 @@ minionsRouter.delete('/:minionId', (req, res, next) => {
     if ( deletedMinion) {
         res.status(204).send();
     } else {
-        res.status(400).send();
+        res.status(500).send();
     }
 }
 )
